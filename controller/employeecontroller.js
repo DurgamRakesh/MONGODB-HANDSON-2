@@ -66,7 +66,7 @@ const empgandexp1yrs = async (req, res) => {
 }
 
 const updateemp = async (req, res) => {
-    const updatedata = req.query;
+    const updatedata = req.body;
     const filter = updatedata.filter;
     const value = {$set:updatedata.value};
     console.log(updatedata);
